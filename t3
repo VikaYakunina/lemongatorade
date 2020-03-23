@@ -1,0 +1,40 @@
+<html>
+<head><title>Тесты</title>
+<style>
+p {
+ color:white;
+ font-size:20px;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<p> введите язык:</p>
+<button onclick="proverit();">Вывести дни недели </button>
+p> A= <input type="text" id="z_1"></p>// 
+
+<p id="rezultat"></p>
+<script>
+function proverit(){
+otv_stud_1 = document.getElementById('z_1').value;
+var lang = 'ru';
+if(otv_stud_1 == lang){
+	var arr = ['пн','вт','ср','чт','пт','сб','вс',];
+
+}else{
+if (otv_stud_1 !== lang){
+	arr=['mn', 'ts', 'wd','th','fr', 'st','sn'];
+
+}
+}
+alert(arr);
+vsego_zadach = 1;
+//procent_vip = ball/vsego_zadach * 100;
+//document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
