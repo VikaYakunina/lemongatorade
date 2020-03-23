@@ -1,0 +1,43 @@
+<html>
+<head><title>Тесты</title>
+<style>
+p {
+ color:white;
+ font-size:20px;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<p> введите число от 0 д 59:</p>
+<button onclick="proverit();">Проверить</button>
+p> A= <input type="text" id="z_1"></p>// от 0 до 59
+
+<p id="rezultat"></p>
+<script>
+function proverit(){
+//otvet_1 = 10;
+
+MIN = document.getElementById('z_1').value;
+if (MIN>=0 && MIN <=14){
+	alert('В 1ую четверть');
+}
+if(MIN>=15 && MIN <=30){
+	 alert('Во 2ую четверть');
+}
+if (MIN>=31 && MIN <=45){
+	alert('В 3ю четверть');
+}
+if (MIN >=46 && MIN <= 59){
+	alert('В 4ую четверть');
+}
+vsego_zadach = 1;
+//procent_vip = ball/vsego_zadach * 100;
+//document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
