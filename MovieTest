@@ -1,0 +1,157 @@
+<html>
+<head><title>Тесты</title>
+<style>
+p {
+ font-size:20px;
+ color:white;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:black">
+<p>Замок в фильмах и мультиках Disney — неотъемлемый атрибут. Все чаще аниматоры студии оформляют его под общую тематику сюжета. Отгадаете ли вы фильм Disney по замку?</p>
+<p><img src="ТронНаследие.jpg" 
+<p><input type="text" id="z_1"></p>
+
+<p><img src="Ральф.jpg" 
+<p><input type="text" id="z_2"></p>
+
+<p><img src="Суперсемейка2.jpg" 
+<p><input type="text" id="z_3"></p>
+
+<p><img src="ИсторияИгрушек.jpg" 
+<p><input type="text" id="z_4"></p>
+
+<p><img src="ЗемляБудущего.jpg" 
+<p><input type="text" id="z_5"></p>
+
+<p><img src="ЧемДальшеВЛес.jpg" 
+<p><input type="text" id="z_6"></p>
+
+<p><img src="Моана.jpg" 
+<p><input type="text" id="z_7"></p>
+
+<p><img src="Франкенвини.jpg" 
+<p><input type="text" id="z_8"></p>
+
+<p><img src="Малефисента.jpg" 
+<p><input type="text" id="z_9"></p>
+
+<p><img src="ЛилоИСтич.jpg" 
+<p><input type="text" id="z_10"></p>
+
+<p><img src="ЦыпленокЦыпа.jpg" 
+<p><input type="text" id="z_11"></p>
+
+<p><img src="АтлантидаЗатерянныйМир.jpg" 
+<p><input type="text" id="z_12"></p>
+
+<p><img src="Аладдин.jpg" 
+<p><input type="text" id="z_13"></p>
+
+<p><img src="КрасавицаИчудовище.jpg" 
+<p><input type="text" id="z_14"></p>
+
+<p><img src="Тарзан.jpg" 
+<p><input type="text" id="z_15"></p>
+
+
+
+
+
+
+
+<button onclick="proverit();">Проверить</button>
+<p id="rezultat"></p>
+<script>
+function proverit(){
+otvet_1 = "Торн: Наследие";
+otvet_2 = "Ральф";
+otvet_3 = "Суперсемейка 2";
+otvet_4 = "История игрушек";
+otvet_5 = "Земля будущего";
+otvet_6 = "Чем дальше в лес...";
+otvet_7 = "Моана";
+otvet_8 = "Франкенвини";
+otvet_9 = "Малефисента";
+otvet_10 = "Лило и Стич";
+otvet_11 = "Цыплёнок Цыпа";
+otvet_12 = "Атлантида: Затерянный мир";
+otvet_13 = "Аладдин";
+otvet_14 = "Красавица и чудовище";
+otvet_15 = "Тарзан";
+
+
+
+otv_stud_1 = document.getElementById('z_1').value;
+otv_stud_2 = document.getElementById('z_2').value;
+otv_stud_3 = document.getElementById('z_3').value;
+otv_stud_4 = document.getElementById('z_4').value;
+otv_stud_5 = document.getElementById('z_5').value;
+otv_stud_6 = document.getElementById('z_6').value;
+otv_stud_7 = document.getElementById('z_7').value;
+otv_stud_8 = document.getElementById('z_8').value;
+otv_stud_9 = document.getElementById('z_9').value;
+otv_stud_10 = document.getElementById('z_10').value;
+otv_stud_11 = document.getElementById('z_11').value;
+otv_stud_12 = document.getElementById('z_12').value;
+otv_stud_13 = document.getElementById('z_13').value;
+otv_stud_14 = document.getElementById('z_14').value;
+otv_stud_15 = document.getElementById('z_15').value;
+
+
+ball = 0;
+if(otv_stud_1 == otvet_1){
+ball +=1;
+}
+if(otv_stud_2 == otvet_2){
+ball +=1;
+}
+if(otv_stud_3 == otvet_3){
+ball +=1;
+}
+if(otv_stud_4 == otvet_4){
+ball +=1;
+}
+if(otv_stud_5 == otvet_5){
+ball +=1;
+}
+if(otv_stud_6 == otvet_6){
+ball +=1;
+}
+if(otv_stud_7 == otvet_7){
+ball +=1;
+}
+if(otv_stud_8 == otvet_8){
+ball +=1;
+}
+if(otv_stud_9 == otvet_9){
+ball +=1;
+}
+if(otv_stud_10 == otvet_10){
+ball +=1;
+}
+if(otv_stud_11 == otvet_11){
+ball +=1;
+
+}if(otv_stud_12 == otvet_12){
+ball +=1;
+}
+if(otv_stud_13 == otvet_13){
+ball +=1;
+}
+if(otv_stud_14 == otvet_14){
+ball +=1;
+}
+if(otv_stud_15 == otvet_15){
+ball +=1;
+}
+vsego_zadach = 15;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
