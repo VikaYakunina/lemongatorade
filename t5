@@ -1,0 +1,41 @@
+<html>
+<head><title>Тесты</title>
+<style>
+p {
+ font-size:20px;
+ color:white;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<p>введите число от 1 до 4</p>
+<button onclick="proverit();">Проверить</button>
+p> A= <input type="text" id="z_1"></p>
+<p id="rezultat"></p>
+<script>
+function proverit(){
+
+otv_stud_1 = document.getElementById('z_1').value;
+
+switch (Number(otv_stud_1)) {
+case 1:
+console.log('зима');
+break;
+case 2:
+console.log('весна');
+break;
+case 3:
+console.log('лето');
+break;
+case 4:
+console.log('осень');
+break;
+}
+}
+</script>
+</body>
+</html>
