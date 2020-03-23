@@ -1,0 +1,37 @@
+<html>
+<head><title>Тесты</title>
+<style>
+p {
+ font-size:20px;
+ color:white;
+}
+input {
+ font-size:20px;
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<p>проверка числа:</p>
+<button onclick="proverit();">Проверить</button>
+p> A= <input type="text" id="z_1"></p>
+<p id="rezultat"></p>
+<script>
+function proverit(){
+otvet_1 = 10;
+
+otv_stud_1 = document.getElementById('z_1').value;
+
+if (otv_stud_1 ==otvet_1){
+	console.log('Верно');
+}
+else{
+console.log('Неверно');
+}
+vsego_zadach = 1;
+//procent_vip = ball/vsego_zadach * 100;
+//document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+</body>
+</html>
