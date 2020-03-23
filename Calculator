@@ -1,0 +1,60 @@
+<input id="num1" />
+
+<div id="operator_btns">
+  <button id="plus" class="operator" onclick="op='+'">+</button>
+  <button id="minus" class="operator" onclick="op='-'">-</button>
+  <button id="times" class="operator" onclick="op='*'">x</button>
+  <button id="divide" class="operator" onclick="op='/'">:</button>
+  <button id="pow" class="operator" onclick="op='pow'">кв числа</button>
+  <button id="sqrt" class="operator" onclick="op='sqrt'">кв корень</button>
+</div>
+
+<input id="num2" />
+
+<button onclick="func()">равнется...</button>
+
+<p id="result"></p>
+
+
+<script>
+  var op; //выбранный оператор
+  function func() {
+    var result;
+    var num1 = Number(document.getElementById("num1").value);
+    var num2 = Number(document.getElementById("num2").value);
+    switch (op) {
+      case '+':
+        result = num1 + num2;
+        break;
+      case '-':
+        result = num1 - num2;
+        break;
+      case '*':
+        result = num1 * num2;
+        break;
+      case '/':
+        if (num2>0) {
+          result = num1 / num2;
+        } else {
+          result = 'бесконечность';
+        }
+        break;
+	  case 'pow':
+		result = num1*num1;
+		break;
+	  case 'sqrt':
+		result=Math.sqrt(num1);
+		break;
+		
+      default:
+        result = 'выберите операцию';
+    }
+
+    document.getElementById("result").innerHTML = result;
+	
+	var predmets = new Array("ООАиП","Культурология","ОПиПК","ТП","ИнфоБез","РуссЯз","ТерВериМатСтат");
+	console.log(predmets[0],predmets[1],predmets[2],predmets[3],predmets[4],predmets[5],predmets[6],predmets[7],);
+	var author ={name:"¬иктори¤", secondname:"якунина", group:"09-852"}
+	console.log(author.name, author.secondname,author.group);
+  }
+</script>
