@@ -1,0 +1,187 @@
+function y = Transform(fn_in)
+Im = imread(fn_in);
+Im_a = reshape(Im,376740,1); % преобразуем в одномерный массив 460*819=376740
+
+fileID = fopen('C:/MathLabProg5/ccitt3n5.txt','r');
+data = textscan(fileID,'%s');
+data=reshape(data{1,1},3,104); % преобразуем в массив 3x104
+fclose(fileID);
+%--------- СЖАТИЕ ----------------------------
+f=fopen('C:/MathLabProg5/pic_haf.dat','wt'); % открываем файл для записи сжатого
+mw=0;
+mb=0;
+flag_w=1; %-- белая точка
+cnt_cod=0;
+tic;
+for j = 1: 1: 376740
+     if (flag_w==1) % -- до этого была белая точка
+         if (Im_a(j)==1) % -- белая точка
+             mw=mw+1;  mb=0;
+             if (j==376740)   %-- последняя точка 
+                %--------- Запись белого кода для последней точки----------------------------
+                while (mw > 2623) % 2623=2560+63
+                    mw=mw-2560;
+                    fprintf(f,'000000011111'); %Запись белого кода для(2560);
+                    cnt_cod=cnt_cod+1;
+                end;
+                if (mw > 63) 
+                    k=63;
+                    while (str2double(data(1,k))<mw)
+                        k=k+1;
+                    end;
+                    m2=k-1; % максимальный составной код меньше mw;
+                    mw=mw-str2double(data(1,m2))+1;
+                    %fprintf(f,data(2,m2)); % записываем белый код для m2;
+                    fprintf(f,White_cod(m2));
+                    cnt_cod=cnt_cod+1;
+                else
+                    mw=mw+1;    
+                end;
+                %fprintf(f,data(2,mw)); % записываем белый код для mw;
+                fprintf(f,White_cod(mw));
+                cnt_cod=cnt_cod+1;
+                %---------------------------------------------------------
+             end;    
+         else      %-- точка черная - переход от белой
+             %--------- Запись белого кода ----------------------------
+             while (mw > 2623) % 2623=2560+63
+                 mw=mw-2560;
+                 fprintf(f,'000000011111'); %Запись белого кода для(2560);
+                 cnt_cod=cnt_cod+1;
+             end;
+             if (mw > 63) 
+                k=63;
+                while (str2double(data(1,k))<mw)
+                   k=k+1;
+                end;
+                m2=k-1; % максимальный составной код меньше mw;
+                mw=mw-str2double(data(1,m2))+1; 
+                %fprintf(f,'%d',data(2,m2)); % записываем белый код для m2;
+                fprintf(f,White_cod(m2));
+                cnt_cod=cnt_cod+1;
+             else
+                mw=mw+1;   
+             end;
+             %fprintf(f,data(2,mw)); % записываем белый код для mw;
+             fprintf(f,White_cod(mw));
+             cnt_cod=cnt_cod+1;
+             %---------------------------------------------------------
+             mw=0; mb=1; flag_w=0;  
+         end; 
+     else   % -- до этого была черная точка 
+        if (Im_a(j)==0) % -- черная точка 
+             mb=mb+1;  mw=0;
+             if (j==376740)   %-- последняя точка 
+                 %--------- Запись черного кода для последней точки----------------------------
+                while (mb > 2623) % 2623=2560+63
+                    mb=mb-2560;
+                    fprintf(f,'000000011111'); %Запись черного кода для(2560);
+                    cnt_cod=cnt_cod+1;
+                end;
+                if (mb > 63) 
+                    k=63;
+                    while (str2double(data(1,k))<mb)
+                        k=k+1;
+                    end;
+                    m2=k-1; % максимальный составной код меньше mb;
+                    mb=mb-str2double(data(1,m2))+1;
+                    %fprintf(f,data(3,m2)); % записываем белый код для m2;
+                    fprintf(f,Black_cod(m2));
+                    cnt_cod=cnt_cod+1;
+                else
+                    mb=mb+1;    
+                end;
+                %fprintf(f,data(3,mb)); % записываем белый код для mb;
+                fprintf(f,Black_cod(mb));
+                cnt_cod=cnt_cod+1;
+                %---------------------------------------------------------
+             end;
+         else              %-- точка белая - переход от черной
+             %--------- Запись черного кода ----------------------------
+             while (mb > 2623) % 2623=2560+63
+                 mb=mb-2560;
+                 fprintf(f,'000000011111'); %Запись черного кода для(2560);
+                 cnt_cod=cnt_cod+1;
+             end;
+             if (mb > 63) 
+                k=63;
+                while (str2double(data(1,k))<mb)
+                   k=k+1;
+                end;
+                m2=k-1; % максимальный составной код меньше mw;
+                mb=mb-str2double(data(1,m2))+1; 
+                %fprintf(f,'%d',data(3,m2)); % записываем черный код для m2;
+                fprintf(f,Black_cod(m2));
+                cnt_cod=cnt_cod+1;
+             else
+                mb=mb+1;   
+             end;
+             %fprintf(f,data(2,mb)); % записываем белый код для mw;
+             fprintf(f,Black_cod(mb));
+             cnt_cod=cnt_cod+1;
+             %----------------------------------
+             mw=1; mb=0; flag_w=1;
+         end;     
+     end;
+end
+t=toc;
+disp('Время сжатия в секундах ');
+disp(t);
+fclose(f);  % закрываем файл 
+s = dir('C:/MathLabProg5/pic_haf.dat');
+disp('Размер сжатого файла: ');
+disp(s.bytes);
+disp('коэф сжатия бинарного файла');
+disp(376740/s.bytes);
+%-------------- Декодирование ----------------------
+f1=fopen('C:/MathLabProg5/pic_haf.dat','r'); % открываем файл для чтения сжатого
+z=fscanf(f1,'%s',s.bytes);  % читаем из сжатого файла
+w='';
+flag=1;
+cnt_cod2=0;
+cnt_p=0;
+cw=0;
+tic;
+for i=1:1:length(z)   % цикл по символам
+        w=strcat(w, z(i));
+        if (flag==1)  % для белых точек
+            cw=count_White(w);
+            if (cw~=999) % найдено совпадение кода
+                cnt_cod2=cnt_cod2+1;
+                for k=1:1:cw        % запись белых точек
+                    cnt_p=cnt_p+1;
+                    zd(cnt_p,1)=1;
+                end;
+                w='';        
+                if (cw<=63) % дальше будут черные точки     
+                    flag=0; % меняем flag
+                end;
+            end;
+        else
+            cb=count_Black(w);
+            if (cb~=999) % найдено совпадение кода
+               cnt_cod2=cnt_cod2+1;
+               for k=1:1:cb        % запись черных точек
+                    cnt_p=cnt_p+1;
+                    zd(cnt_p,1)=0;
+                end;         
+                w='';        
+                if (cb<=63) % дальше будут белые точки 
+                    flag=1; % меняем flag
+                end;
+            end;
+        end;    
+end;
+t=toc;
+disp('Время расжатия в секундах ');
+disp(t);
+fclose(f1);  % закрываем файл 
+
+Im2=zd;
+Im3 = reshape(Im2,460,819); % преобразуем в массив 460*819
+subplot(1,2,1); imshow(Im); title('before');
+subplot(1,2,2); imshow(Im3); title('after');
+
+disp('Конец');
+y=1;
+end
