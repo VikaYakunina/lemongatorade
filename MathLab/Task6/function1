@@ -1,0 +1,13 @@
+function y = mFind(fn_in)
+Im = imread(fn_in);
+imshow(Im);
+d = imdistline;
+delete(d);
+gray_image = rgb2gray(Im);
+imshow(gray_image);
+[centers,radii] = imfindcircles(Im,[20 25],'ObjectPolarity','dark','Sensitivity',0.9);
+imshow(Im);
+h=viscircles(centers, radii);
+disp('Конец');
+y=1;
+end
