@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color: #cda397;">
+<H1>Покупка фильма</H1>
+<div class = "container pt-3" id = "app" style ="max-width: 1300px;">
+    <form class="form-inline mb-3" @submit.prevent="createContact">
+        <div class="form-group mr-5">
+            <label for="cinema" class="mr-3">Название фильма</label>
+            <input type="text" class="form-control" id="cinema" v-model="form.cinema" >
+        </div>
+        <div class="form-group mr-5">
+            <label for="name" class="mr-3">ФИО заказчика</label>
+            <input type="text" class="form-control" id="name" v-model="form.name" >
+        </div>
+        <div class="form-group mr-5">
+            <label for="value" class="mr-3">e-mail</label>
+            <input type="text" class="form-control" id="value" v-model="form.value">
+        </div>
+        <div align="center">
+            <button  class="btn btn-primary" type="submit">Оформить заказ</button>
+        </div>
+
+    </form>
+    <div class = "card mb-3" v-for="contact in contacts">
+        <div class="card-body">
+            <h5 class="card-title">{{contact.cinema}}</h5>
+            <p class="card-title">{{contact.name}}</p>
+            <p class="card-text">{{contact.value}}</p>
+            <button class = "btn btn-primary">Отметить</button>
+            <button class = "btn btn-danger">Удалить</button>
+        </div>
+    </div>
+</div>
+<script type="module" src = "frontend_c.js"></script>
+</body>
+</html>
