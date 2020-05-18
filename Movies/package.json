@@ -1,0 +1,23 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "client-server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "expert",
+    "system",
+    "client-server"
+  ],
+  "author": "Vika",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
