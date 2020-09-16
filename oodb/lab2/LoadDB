@@ -1,0 +1,61 @@
+import com.google.gson.Gson;
+import com.google.gson.JsonSyntaxException;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.util.Arrays;
+import java.util.List;
+
+public class LoadDB {
+
+    public static Hospital load() throws IOException {
+        Hospital hospital = null;
+        String hospitalStr = "";
+        File file = new File("hospital.json");
+
+        if (file.exists()) {
+            hospitalStr = new String(Files.readAllBytes(file.toPath()));
+        } else {
+            System.out.println("File hospital.json not found!");
+        }
+
+        hospital = new Gson().fromJson(hospitalStr, Hospital.class);
+
+        return hospital;
+    }
+
+    public static List<Patient> loadPatientList() throws IOException, JsonSyntaxException {
+        String pStr = "";
+        File file = new File("patient.json");
+
+        if (file.exists()) {
+            pStr = new String(Files.readAllBytes(file.toPath()));
+        } else {
+            System.out.println("File patient.json not found!");
+        }
+
+        Gson gson = new Gson();
+
+        Patient[] plst = gson.fromJson(pStr, Patient[].class);
+
+        return Arrays.asList(plst);
+    }
+
+
+    public static List<Diagnosis> loadlistDiagnosis() throws IOException, JsonSyntaxException {
+        String dStr = "";
+        File file = new File("diagnosis.json");
+
+        if (file.exists()) {
+            dStr = new String(Files.readAllBytes(file.toPath()));
+        } else {
+            System.out.println("File diagnosis.json not found!");
+        }
+
+        Gson gson = new Gson();
+
+        Diagnosis[] dlst = gson.fromJson(dStr, Diagnosis[].class);
+
+        return Arrays.asList(dlst);
+    }
+}
