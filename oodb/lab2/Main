@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+        try {
+
+            List<Patient> patient = LoadDB.loadPatientList();
+
+            patient.forEach(System.out::println);
+
+            Patient ptnt = PatientService.findPatientByName(patient, "Иванов Иван Иванович");
+
+            if (ptnt != null) {
+                ptnt.setPhoneNumber("+72536237474");
+                ptnt.setMedicalPolicy("43647822924629");
+            }
+
+            SaveDB.savePatientList(patient);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
