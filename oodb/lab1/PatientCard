@@ -1,0 +1,20 @@
+import java.util.List;
+
+public class PatientCard extends Patient{
+
+    private Doctor doctor;
+
+    public PatientCard(String FullName,String Age, String PhoneNumber, String MedicalPolicy, Registration registration) {
+        super(FullName, Age, PhoneNumber,MedicalPolicy, registration);
+    }
+    public PatientCard() {
+    }
+
+    private List<Diagnosis> listDiagnosis;
+    public List<Diagnosis> getlistDiagnosis() {
+        return listDiagnosis;
+    }
+    public  void setListDiagnosis(List<Diagnosis> listDiagnosis){
+        this.listDiagnosis= listDiagnosis;
+    }
+}
