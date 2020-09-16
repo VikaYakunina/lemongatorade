@@ -1,0 +1,47 @@
+import java.util.List;
+
+public class Hospital {
+
+    private String Adress;
+
+    private List<Patient> patient;
+
+    private List<Registration> registration;
+
+
+    public String getName() {
+        return Adress;
+    }
+
+    public void setAdress(String Adress) {
+        this.Adress = Adress;
+    }
+
+    public List<Patient> getPatient() {
+        return patient;
+    }
+
+    public void setPatient(List<Patient> patient) {
+        this.patient = patient;
+    }
+
+    public List<Registration> getRegistration() {
+        return registration;
+    }
+
+    public void setTransactions(List<Registration> registration) {
+        this.registration = registration;
+    }
+
+
+
+
+    @Override
+    public String toString() {
+        return "Hospital: " +
+                "address=" + Adress + '\n' +
+                ", patient=" + patient + '\n' +
+                ", registration=" + registration + '\n' ;
+
+    }
+}
