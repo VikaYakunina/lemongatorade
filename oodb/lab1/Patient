@@ -1,0 +1,22 @@
+import java.util.List;
+
+public class Patient extends Human{
+
+    private Registration registration;
+
+    public Patient(String FullName,String Age, String PhoneNumber, String MedicalPolicy,Registration registration) {
+        super(FullName, Age, PhoneNumber,MedicalPolicy);
+        this.registration=registration;
+    }
+
+    public Patient() {
+    }
+
+
+    @Override
+    public String toString() {
+        return "Patient: " + getFullName() +
+                ", registration=" + registration +
+                '\n';
+    }
+}
