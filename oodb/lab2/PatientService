@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class PatientService {
+
+    public static Patient findPatientByName(List<Patient> patients, String searchName) {
+        Patient result = null;
+
+        for (Patient person : patients) {
+            if (person.getFullName().equals(searchName)) {
+                result = person;
+            }
+        }
+        return result;
+    }
+}
