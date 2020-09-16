@@ -1,0 +1,40 @@
+import com.google.gson.Gson;
+
+import java.io.*;
+import java.util.List;
+
+public class SaveDB {
+    public static void savePatientList(List<Patient> patient) throws IOException {
+
+        if (patient != null && patient.size() > 0) {
+            Gson gson = new Gson();
+
+            String patientAsJson = gson.toJson(patient);
+
+            System.out.println(patientAsJson);
+
+            try (OutputStream os = new FileOutputStream(new File("patient.json"))) {
+                os.write(patientAsJson.getBytes("UTF-8"));
+                os.flush();
+            }
+
+        }
+    }
+
+    public static void savelistDiagnosis(List<Diagnosis> diagnosis) throws IOException {
+
+        if (diagnosis != null && diagnosis.size() > 0) {
+            Gson gson = new Gson();
+
+            String diagnosisAsJson = gson.toJson(diagnosis);
+
+            System.out.println(diagnosisAsJson);
+
+            try (OutputStream os = new FileOutputStream(new File("diagnosis.json"))) {
+                os.write(diagnosisAsJson.getBytes("UTF-8"));
+                os.flush();
+            }
+
+        }
+    }
+}
