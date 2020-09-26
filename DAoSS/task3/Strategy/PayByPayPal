@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Конкретная стратегия. Реализует оплату корзины интернет магазина через
+ * Оплата корзины интернет магазина через
  * платежную систему PayPal.
  */
 public class PayByPayPal implements PayStrategy {
