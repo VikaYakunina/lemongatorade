@@ -1,4 +1,4 @@
-public class Diner {
+public class Main {
 	public static void main(String[] args) {
 		Cook cook = new Cook();
 		Waitress waitress = new Waitress();
