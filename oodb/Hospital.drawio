@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-14T20:10:45.107Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="k6rjsk7qkAUQzRLl_zDA" version="13.7.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-14T20:10:53.344Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36" etag="MEcKRJvz3NlmMv2EUMCh" version="13.7.9" type="github">
   <diagram id="4uowSXvhyTno2ISkrL0n" name="Page-1">
     <mxGraphModel dx="1038" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -131,7 +131,7 @@
         <mxCell id="g-Wt8GFLsmkW3fyWHZC--56" value="*" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="550" y="312" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="g-Wt8GFLsmkW3fyWHZC--21" value="Treatments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+        <mxCell id="g-Wt8GFLsmkW3fyWHZC--21" value="Treatments" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#ffe6cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d79b00;" parent="1" vertex="1">
           <mxGeometry x="250" y="222" width="160" height="156" as="geometry" />
         </mxCell>
         <mxCell id="g-Wt8GFLsmkW3fyWHZC--22" value="+ field: diagnoses" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="g-Wt8GFLsmkW3fyWHZC--21" vertex="1">
