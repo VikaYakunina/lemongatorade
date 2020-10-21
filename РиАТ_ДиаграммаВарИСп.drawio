@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T12:05:25.125Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="i-3xUg2Iu6_zrRLnNaiB" version="13.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-21T12:08:58.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="1X8QbhRwAd49jd0PCRNe" version="13.8.1" type="github">
   <diagram id="kdbvxzHxcspiHncA5dtV" name="Page-1">
     <mxGraphModel dx="748" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -150,6 +150,51 @@
             <mxPoint x="370" y="910" as="sourcePoint" />
             <mxPoint x="420" y="860" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-24" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="p5N6be4la8yaBBw_UBMg-11" target="p5N6be4la8yaBBw_UBMg-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="910" as="sourcePoint" />
+            <mxPoint x="380" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-25" value="Просмотр данных и расписания врача-специалиста" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="770" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-26" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="p5N6be4la8yaBBw_UBMg-25" target="p5N6be4la8yaBBw_UBMg-28">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="890" as="sourcePoint" />
+            <mxPoint x="510" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-28" value="Изменение расписания врача-специалиста" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="439" y="750" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-30" value="" style="endArrow=none;dashed=1;html=1;exitX=0.567;exitY=1.023;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="p5N6be4la8yaBBw_UBMg-11" target="p5N6be4la8yaBBw_UBMg-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="890" as="sourcePoint" />
+            <mxPoint x="280" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-31" value="&lt;span style=&quot;font-size: 11.0pt ; line-height: 107% ; font-family: &amp;#34;calibri&amp;#34; , sans-serif&quot;&gt;Помощь&lt;br&gt;пациенту и врачу по техническим вопросам&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="930" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-32" value="Изменение личных данных врача специалиста" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="860" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-33" value="" style="endArrow=classic;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p5N6be4la8yaBBw_UBMg-25" target="p5N6be4la8yaBBw_UBMg-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="880" as="sourcePoint" />
+            <mxPoint x="420" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-35" value="" style="endArrow=none;dashed=1;html=1;exitX=0.274;exitY=0.985;exitDx=0;exitDy=0;exitPerimeter=0;startArrow=classic;startFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p5N6be4la8yaBBw_UBMg-11" target="p5N6be4la8yaBBw_UBMg-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="940" as="sourcePoint" />
+            <mxPoint x="157" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-36" value="Поддержание стабильной работы системы" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="990" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
