@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T11:59:39.482Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="sPhbJZ_L-tlOVtbOgB3U" version="13.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-21T12:00:19.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="yln40ZL5joNE6FDKeX0o" version="13.8.1" type="github">
   <diagram id="kdbvxzHxcspiHncA5dtV" name="Page-1">
     <mxGraphModel dx="898" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -92,7 +92,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-24" value="Просмотр личной информации" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="250" y="505" width="120" height="80" as="geometry" />
+          <mxGeometry x="250" y="490" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-26" value="" style="endArrow=classic;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endFill=1;startArrow=none;startFill=0;" parent="1" source="ZQ9a8AEzVLyqdegR4RIP-22" target="ZQ9a8AEzVLyqdegR4RIP-27" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -110,7 +110,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-30" value="Внесение данных в карту пациента" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="280" y="810" width="120" height="80" as="geometry" />
+          <mxGeometry x="270" y="810" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-31" value="" style="endArrow=classic;dashed=1;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;endFill=1;" parent="1" source="ZQ9a8AEzVLyqdegR4RIP-22" target="ZQ9a8AEzVLyqdegR4RIP-32" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -129,6 +129,15 @@
         </mxCell>
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-35" value="Изменение личного расписания" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="480" y="560" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-1" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZQ9a8AEzVLyqdegR4RIP-30" target="p5N6be4la8yaBBw_UBMg-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="740" as="sourcePoint" />
+            <mxPoint x="510" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p5N6be4la8yaBBw_UBMg-2" value="Запись пациента на повторный прием" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="760" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
