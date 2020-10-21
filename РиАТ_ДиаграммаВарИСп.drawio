@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-10-21T12:00:19.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="yln40ZL5joNE6FDKeX0o" version="13.8.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-10-21T12:00:33.959Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="4r680-s111p8NqQYU1JF" version="13.8.1" type="github">
   <diagram id="kdbvxzHxcspiHncA5dtV" name="Page-1">
     <mxGraphModel dx="898" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -130,7 +130,7 @@
         <mxCell id="ZQ9a8AEzVLyqdegR4RIP-35" value="Изменение личного расписания" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="480" y="560" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="p5N6be4la8yaBBw_UBMg-1" value="" style="endArrow=none;dashed=1;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZQ9a8AEzVLyqdegR4RIP-30" target="p5N6be4la8yaBBw_UBMg-2">
+        <mxCell id="p5N6be4la8yaBBw_UBMg-1" value="" style="endArrow=classic;dashed=1;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=1;" edge="1" parent="1" source="ZQ9a8AEzVLyqdegR4RIP-30" target="p5N6be4la8yaBBw_UBMg-2">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="740" as="sourcePoint" />
             <mxPoint x="510" y="800" as="targetPoint" />
