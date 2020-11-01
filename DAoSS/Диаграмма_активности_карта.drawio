@@ -1,1 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2020-11-01T17:42:53.482Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="0Ii7kKQadhrgjLerZC08" version="13.8.8" type="github"><diagram id="MdS56SYRz7G9-HL7Axoy" name="Page-1">5VlNc9sgEP01PjYj9GXpGNtJe2knHc80zalDLCIxwcKDcWzl1xcQSEKSUyWVPU2TAwPLgtjdt481mXjz9eEzg5vsK00QmbhOcph4i4nrRnEkWikoSkEAQClIGU5KUUOwxM9ICx0t3eEEbS1FTinheGMLVzTP0YpbMsgY3dtqD5TYX93AFHUEyxUkXektTnimzXKntfwLwmlmvgzCuJxZQ6OsLdlmMKH7hsi7mnhzRikve+vDHBHpO+OXct31kdnqYAzlfMiCb9Fjke5vb74TGmxD9PALFz8+6V2eINlpg/VheWE8IHYRzhaDWcbXRMiA6ApjNnIe5cmSQy5nHzAhc0ooU8s8R/1JVc7oI+qb0d9GjKPDUaNA5SoBMUTXiLNCqOgFPvDLJYUNm30dK0+LskaYjAxqdKTVxrUDRUf78BX+dAf4M08uJTDFaEXgdotXtmvRAfOfou9cBHp015hZSMMdMyjMIBeHbyySw7vmXL1Mjcy68nAo6eRAy//CALpjK/RnJHHIUsRf0PP749kIWNATMCNjiECOn+zj9kVRf+GGYmFIBRcvdmy4gBYQSjP1qmYytTby3djaKGrtU7qhs4/CVGX122Hmd2Em4hkHE4GTCKjWVa3Y3pFTs0vVOkroGAUl0QrXDYVQ9SPVBqpdWEu86w6qWUbX9zth/WyfYY6WG6jQsheXgg3vEZLec+ykn3aTvhdE4amyPhgx6xs5XzPAuFkv832pj0YZz2hKc0iuaumYvOAP5IX4v+CF6gKq7qPzEkPYTwy+yfUWKkUOchuHDG3xM7xXChIrcMfptqzK5DQkOM0lhgUOkLjPZzKRsSiXLvXEGieJgtBGmqiMDmaTYNEqEHKao05toIWM7vIEJdYV9Vd8EUR2UIJhRYJ7KrqYjkcX4C10ASyyqLnjPdEFcPpD/s74ImxvNJAvBDhg0VDT2Xb0wKHf/52j52rrTy190SlPMCp5Rf3ktTB1iKpAPiaFiYBY8Qi7FOafk8Li/lBNTREpWrcRNtAoH6MXS1LRep0Y1+4EZykwDdor9PfcGMDt8bd/Kn8bfnnpzjhnCe477kVg+8gPOj4KvOMMPL6LhrxlnPJadV53rY54acYf69L0W5dT+3fdiWts8IEfeZyhSPP+JaS57arqrc88HYI/NdS8AVB7T++zVUUy/gOtGNaP6WUA6v9IeFe/AQ==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-01T20:06:31.983Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="yu3_fmSpXH-FBgJwOTJ4" version="13.8.8" type="github">
+  <diagram id="MdS56SYRz7G9-HL7Axoy" name="Page-1">
+    <mxGraphModel dx="898" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-1" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="414" y="10" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-2" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="N8kygwWPQlo5s6ef_iyV-1" target="N8kygwWPQlo5s6ef_iyV-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="110" as="sourcePoint" />
+            <mxPoint x="429" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-4" value="Есть карта пациента?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="304" y="70" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-5" value="" style="endArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="N8kygwWPQlo5s6ef_iyV-4" target="N8kygwWPQlo5s6ef_iyV-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="110" as="sourcePoint" />
+            <mxPoint x="210" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-6" value="Да" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="580" y="50" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="N8kygwWPQlo5s6ef_iyV-4" target="N8kygwWPQlo5s6ef_iyV-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="110" as="sourcePoint" />
+            <mxPoint x="690" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="100" />
+              <mxPoint x="640" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-8" value="Нет" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="264" y="60" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-9" value="Завести карту" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-10" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="402.5" y="145" width="53" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="N8kygwWPQlo5s6ef_iyV-9" target="N8kygwWPQlo5s6ef_iyV-10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="110" as="sourcePoint" />
+            <mxPoint x="440" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-12" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="N8kygwWPQlo5s6ef_iyV-10" target="N8kygwWPQlo5s6ef_iyV-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="200" as="sourcePoint" />
+            <mxPoint x="429" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N8kygwWPQlo5s6ef_iyV-13" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="414" y="220" width="30" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
