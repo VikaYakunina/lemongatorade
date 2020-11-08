@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-11-01T20:05:59.420Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36" etag="AvTCTpmwDYGmLunUxhVm" version="13.8.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T15:36:26.607Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="pbrjXyT-vOOIP-gi5qoD" version="13.9.2" type="github">
   <diagram id="M-r2KvOiGQampgGJAHBi" name="Page-1">
-    <mxGraphModel dx="1283" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
+    <mxGraphModel dx="898" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
             <mxPoint x="399" y="120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YObjTYddOFlQ0gVV6bDq-3" value="Поставить диагноз" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="YObjTYddOFlQ0gVV6bDq-3" value="Изучение анализов пациента" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="339" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YObjTYddOFlQ0gVV6bDq-4" value="Такой диагноз уже существует?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -47,7 +47,7 @@
         <mxCell id="YObjTYddOFlQ0gVV6bDq-9" value="Нет" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="210" y="170" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="YObjTYddOFlQ0gVV6bDq-10" value="Добавить новое название в список диагнозов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="YObjTYddOFlQ0gVV6bDq-10" value="Добавить новое название в базу диагнозов" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="270" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YObjTYddOFlQ0gVV6bDq-11" value="" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
