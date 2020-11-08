@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-11-08T15:35:07.013Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="nhG0-20vASkh8RvQYwXU" version="13.9.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-08T15:35:48.022Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36" etag="F4glPzwiBeU0XnjI8ucc" version="13.9.2" type="github">
   <diagram id="VceCvzimTkMVtTXObDkb" name="Page-1">
     <mxGraphModel dx="898" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -83,7 +83,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="q14L1B0iD18A4D-N9El8-23" value="Внесение данных" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="470" y="280" width="110" height="20" as="geometry" />
+          <mxGeometry x="460" y="310" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="q14L1B0iD18A4D-N9El8-25" value="Назначить" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="480" y="350" width="70" height="20" as="geometry" />
@@ -102,11 +102,11 @@
         </mxCell>
         <mxCell id="q14L1B0iD18A4D-N9El8-32" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="580" y="270" as="sourcePoint" />
-            <mxPoint x="52" y="270" as="targetPoint" />
+            <mxPoint x="578" y="290" as="sourcePoint" />
+            <mxPoint x="50" y="290" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="382" y="270" />
-              <mxPoint x="242" y="270" />
+              <mxPoint x="380" y="290" />
+              <mxPoint x="240" y="290" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -185,6 +185,9 @@
             <mxPoint x="390" y="250" as="sourcePoint" />
             <mxPoint x="440" y="200" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="kAKa3oZjB7s7ounNieG1-30" value="Осмотр" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="265" width="60" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
