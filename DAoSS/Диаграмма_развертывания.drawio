@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2020-11-30T07:00:06.219Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="ek6lwnyES66_qCorB2zP" version="13.10.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-30T07:33:44.977Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="Y17jTdBmLzQMNEzvPqOU" version="13.10.4" type="github">
   <diagram id="r4ITJS17AVwMGJtm86h9" name="Page-1">
     <mxGraphModel dx="1298" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="78sqPYecV6j8GcytZ9cQ-1" value="Hospital Managment System" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
-          <mxGeometry x="260" y="140" width="180" height="120" as="geometry" />
+          <mxGeometry x="260" y="140" width="180" height="200" as="geometry" />
         </mxCell>
         <mxCell id="78sqPYecV6j8GcytZ9cQ-3" value="Doctor inteface" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
-          <mxGeometry x="230" y="360" width="160" height="120" as="geometry" />
+          <mxGeometry x="220" y="460" width="160" height="120" as="geometry" />
         </mxCell>
         <mxCell id="78sqPYecV6j8GcytZ9cQ-4" value="Database Server" style="verticalAlign=top;align=left;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="290" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="78sqPYecV6j8GcytZ9cQ-7" value="" style="endArrow=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=62.5;exitPerimeter=0;entryX=0;entryY=0;entryDx=120;entryDy=95;entryPerimeter=0;" parent="1" source="78sqPYecV6j8GcytZ9cQ-3" target="78sqPYecV6j8GcytZ9cQ-1" edge="1">
+        <mxCell id="78sqPYecV6j8GcytZ9cQ-7" value="" style="endArrow=none;html=1;exitX=0;exitY=0;exitDx=0;exitDy=62.5;exitPerimeter=0;entryX=0;entryY=0;entryDx=200;entryDy=95;entryPerimeter=0;" parent="1" source="78sqPYecV6j8GcytZ9cQ-3" target="78sqPYecV6j8GcytZ9cQ-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="290" as="sourcePoint" />
             <mxPoint x="440" y="240" as="targetPoint" />
@@ -38,10 +38,16 @@
           <mxGeometry x="-10" y="320" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="6_nKLv_Iumr1ir5zkn-g-2" value="Specialization" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="240" y="420" width="100" height="50" as="geometry" />
+          <mxGeometry x="230" y="510" width="100" height="50" as="geometry" />
         </mxCell>
         <mxCell id="6_nKLv_Iumr1ir5zkn-g-3" value="Diagnoses" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="570" y="350" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6_nKLv_Iumr1ir5zkn-g-4" value="MedicalSystem.cs" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="270" y="210" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="6_nKLv_Iumr1ir5zkn-g-5" value="MedicalSystem.bdf" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="270" y="270" width="140" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
