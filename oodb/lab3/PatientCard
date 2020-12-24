@@ -1,0 +1,34 @@
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import java.util.List;
+
+public class PatientCard extends Human {
+
+
+    public PatientCard(String FullName, String Age, String PhoneNumber, String MedicalPolicy, String Address) {
+        super(FullName, Age, PhoneNumber, MedicalPolicy, Address);
+    }
+
+    public PatientCard() {
+    }
+
+    private List<Diagnoses> diagnoses;
+
+
+    @XmlElementWrapper(name = "diagnoses")
+    @XmlElement(name = "diagnoses")
+    public List<Diagnoses> getDiagnoses() {
+        return diagnoses;
+    }
+
+    public void setDiagnoses(List<Diagnoses> diagnoses) {
+        this.diagnoses = diagnoses;
+    }
+
+    @Override
+    public String toString() {
+        return "PatientCard: " + getFullName() +
+                ", diagnoses=" + diagnoses+
+                '\n';
+    }
+}
