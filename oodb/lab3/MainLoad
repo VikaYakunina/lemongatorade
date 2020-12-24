@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Пример, демонстрирующий преобразование XML документа в объект
+ */
+public class MainLoad {
+
+    public static void main(String[] args) {
+
+        Hospital hospital = XMLService.loadHospitalFromXML();
+        System.out.println(hospital);
+    }
+}
