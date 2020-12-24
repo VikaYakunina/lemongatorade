@@ -1,0 +1,45 @@
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
+import java.io.File;
+
+
+public class XMLService {
+
+    /**
+     * метод saveHospitalData сохраняет объект типа Hospital в XML документ
+     */
+    public static void saveHospitalData(Hospital hospital) {
+
+        try {
+            JAXBContext context = JAXBContext.newInstance(Hospital.class);
+            Marshaller marshaller = context.createMarshaller();
+            // устанавливаем флаг для читабельного вывода XML в JAXB
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
+
+            // маршаллинг объекта в файл
+            marshaller.marshal(hospital, new File("hospital.xml"));
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    /**
+     * Метод loadHospitalFromXML преобразует XML документ в объект типа Hospital
+     */
+    public static Hospital loadHospitalFromXML() {
+
+        try {
+            // создаем объект JAXBContext - точку входа для JAXB
+            JAXBContext jaxbContext = JAXBContext.newInstance(Hospital.class);
+            Unmarshaller un = jaxbContext.createUnmarshaller();
+
+            return (Hospital) un.unmarshal(new File("hospital.xml"));
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
