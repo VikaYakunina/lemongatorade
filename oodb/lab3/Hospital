@@ -1,0 +1,70 @@
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
+import java.util.List;
+
+@XmlRootElement(name = "Hospital")
+public class Hospital {
+    private String hospitalName;
+    private String hospitalAddress;
+    private List<PatientCard> patientCards;
+
+    private List<Treatments> treatments;
+    private List<Diagnoses> diagnoses;
+
+    public String gethospitalName() {
+        return hospitalName;
+    }
+
+    public void sethospitalName(String hospitalName) {
+        this.hospitalName = hospitalName;
+    }
+
+    public String getHospitalAdress() {
+        return hospitalAddress;
+    }
+
+    public void setHospitalAdress(String hospitalAdress) {
+        this.hospitalAddress = hospitalAdress;
+    }
+
+    @XmlElementWrapper(name = "patientCards")
+    @XmlElement(name = "patientCard")
+    public List<PatientCard> getPatientCards() {
+        return patientCards;
+    }
+
+    public void setPatientCards(List<PatientCard> listPatientCard) {
+        this.patientCards = listPatientCard;
+    }
+
+    @XmlElementWrapper(name = "treatments")
+    @XmlElement(name = "treatments")
+    public List<Treatments> getTreatments() {
+        return treatments;
+    }
+
+    public void setTreatments(List<Treatments> treatments) {
+        this.treatments = treatments;
+    }
+
+    @XmlElementWrapper(name = "diagnoses")
+    @XmlElement(name = "diagnoses")
+    public List<Diagnoses> getDiagnoses() {
+        return diagnoses;
+    }
+
+    public void setDiagnoses(List<Diagnoses> diagnoses) {
+        this.diagnoses = diagnoses;
+    }
+
+    @Override
+    public String toString() {
+        return "Hospital: " +
+                "Hospital name='" + hospitalName + '\n' +
+                ", Address=" + hospitalAddress + '\n' +
+                ", patientCard=" + patientCards + '\n' +
+                ", treatments=" + treatments + '\n' +
+                ", diagnoses=" + diagnoses;
+    }
+}
