@@ -1,0 +1,43 @@
+import javax.xml.bind.annotation.XmlElement;
+import java.util.Date;
+
+public class Diagnoses {
+
+    private String diseaseName;
+    private String dateDiagnoses;
+
+    public Diagnoses(String diseaseName) {
+        this.diseaseName = diseaseName;
+        this.dateDiagnoses = dateDiagnoses;
+    }
+
+    public Diagnoses() {
+    }
+
+    @XmlElement(name = "diseaseName")
+    String getdiseaseName() {
+        return diseaseName;
+    }
+
+    @XmlElement(name = "dateDiagnoses")
+    String getdateDiagnoses() {
+        return dateDiagnoses;
+    }
+
+    public void setdiseaseName(String diseaseName) {
+        this.diseaseName = diseaseName;
+    }
+
+    public void setdateDiagnoses(String dateDiagnoses) {
+        this.dateDiagnoses = dateDiagnoses;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Diagnoses:" +
+                "Disease name=" + diseaseName +
+                ", dateDiagnoses=" + dateDiagnoses +
+                '\n';
+    }
+}
