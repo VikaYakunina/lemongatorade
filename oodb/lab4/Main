@@ -1,0 +1,54 @@
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.List;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        try {
+
+            Class.forName("org.postgresql.Driver");
+            String dbURL = "jdbc:postgresql://localhost:5432/oodb";
+            Connection connection =
+                    DriverManager.getConnection( dbURL, "postgres", "999999");
+            long startTime = System.currentTimeMillis();
+
+            LoadFromDb.loadHumanList(connection);
+            long endTime = System.currentTimeMillis();
+            System.out.println("Total execution time LoadFromDb : " + (endTime-startTime) + "ms");
+
+            List<Human> humans = LoadFromFile.loadHumanList();
+
+            System.out.println("---- Загрузили из файла и выводим --------------");
+            humans.forEach(System.out::println);
+
+            Human hms = HumanService.findHumanByFullName(humans, "Иванов Иван Иванович");
+
+            if (hms != null) {
+                hms.setPhoneNumber("+71111111111");
+                hms.setMedicalPolicy("64736494");
+                System.out.println("---- нашли человека и выводим --------------");
+                System.out.println(hms.getFullName());
+            }
+
+            long startTime2 = System.currentTimeMillis();
+            SaveDB.saveHumanList(humans, connection);
+            long endTime2 = System.currentTimeMillis();
+            System.out.println("Total execution time SaveFromDb : " + (endTime-startTime) + "ms");
+
+
+            connection.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
