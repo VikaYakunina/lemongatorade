@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Пример, демонстрирующий сохранение объекта в XML документ
+ */
+public class MainSave {
+
+    public static void main(String[] args) {
+
+        // Создаем объект больница
+        Hospital hospital= new Hospital();
+
+        // Создаем объекты - пациенты
+        PatientCard patientCard1 = new PatientCard("Иванов Иван Иванович","37","","45475844","Профсоюзная");
+        PatientCard patientCard2 = new PatientCard("Петр Чайковский","33","7547468","3463","Кремлевская");
+
+        // Добавляем объекту patientCard1 диагноз
+        Diagnoses diagnoses = new Diagnoses("ОРВИ");
+        List<Diagnoses> listDiagnoses = new ArrayList<>();
+        listDiagnoses.add(diagnoses);
+        patientCard2.setDiagnoses(listDiagnoses);
+
+        Diagnoses diagnoses1 = new Diagnoses("Covid");
+        List<Diagnoses> listDiagnoses1 = new ArrayList<>();
+        listDiagnoses.add(diagnoses1);
+        patientCard1.setDiagnoses(listDiagnoses);
+
+
+
+
+        List<PatientCard> listPatientCard = new ArrayList<>();
+        listPatientCard.add(patientCard1);
+        listPatientCard.add(patientCard2);
+
+        // Прикрепляем клиентов к больнице
+        hospital.setPatientCards(listPatientCard);
+
+        // сохраняем объект в в XML документ
+        XMLService.saveHospitalData(hospital);
+    }
+}
